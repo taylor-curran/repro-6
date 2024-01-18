@@ -1,0 +1,13 @@
+
+pip install -U prefect
+
+prefect cloud login --key pnb_hp2WDDqlU10i5dvGHyA3IkQL1EksCu4iRaSo --workspace prefect-sandbox/cm-demo
+
+prefect deployment run 'hello-flow/hello-dep'
+
+notes
+curl https://api.prefect.cloud/hooks/ht4ngI9CxyqStVMQ5fwAjg
+
+prefect cloud workspace set --workspace prefect-sandbox/cm-demo
+
+prefect block register --file snowflake_bocks.py
